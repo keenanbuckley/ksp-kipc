@@ -1,0 +1,23 @@
+<Project>
+  <!--
+    Per-developer overrides go in Directory.Build.user.props (gitignored).
+    See Directory.Build.user.props.example for the expected shape.
+    The KSPRoot property must be set somewhere (either in Directory.Build.user.props
+    or as an environment variable) before the project will build.
+  -->
+  <Import Project="Directory.Build.user.props" Condition="Exists('Directory.Build.user.props')" />
+
+  <PropertyGroup>
+    <KSPManaged>$(KSPRoot)/KSP_x64_Data/Managed</KSPManaged>
+    <KOSPlugins>$(KSPRoot)/GameData/kOS/Plugins</KOSPlugins>
+    <KRPCPlugins>$(KSPRoot)/GameData/kRPC</KRPCPlugins>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <Target Name="ValidateKSPRoot" BeforeTargets="ResolveAssemblyReferences" Condition="'$(KSPRoot)' == ''">
+    <Error Text="KSPRoot is not set. Define it as an environment variable, or create plugin/Directory.Build.user.props (see Directory.Build.user.props.example)." />
+  </Target>
+</Project>

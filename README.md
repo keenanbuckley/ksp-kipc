@@ -38,3 +38,19 @@ There's two main scenarios where I can see the bridge being useful, though other
  * [KRPC API](/doc/krpc.md)
  * [License](/doc/LICENSE.md)
  * [All documentation](/doc/)
+
+## Building
+
+Set `KSPRoot` to your KSP 1.12.x install path, either as an environment
+variable or by copying `plugin/Directory.Build.user.props.example` to
+`plugin/Directory.Build.user.props` and editing it. Then:
+
+    nuget restore plugin/KIPCPlugin/packages.config -PackagesDirectory plugin/packages
+    dotnet build plugin/KIPCPlugin/KIPC.csproj -c Release
+
+On Windows you can also just open `plugin/KIPC.sln` in Visual Studio 2017+
+and Build; NuGet restore runs automatically.
+
+Drop the resulting `KIPCPlugin.dll` (and `JsonFx.dll` from
+`plugin/packages/JsonFx.2.0.1209.2802/lib/net40/`) into `$KSPRoot/GameData/KIPC/`
+alongside `plugin/KIPC.version`.

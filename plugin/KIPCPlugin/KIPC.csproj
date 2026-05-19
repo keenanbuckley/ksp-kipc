@@ -35,39 +35,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(KSPManaged)/Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
       <Aliases>global</Aliases>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>$(KSPManaged)/Assembly-CSharp-firstpass.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="JsonFx, Version=2.0.1209.2802, Culture=neutral, PublicKeyToken=315052dd637f8a52, processorArchitecture=MSIL">
       <HintPath>..\packages\JsonFx.2.0.1209.2802\lib\net40\JsonFx.dll</HintPath>
     </Reference>
     <Reference Include="kOS">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kOS\Plugins\kOS.dll</HintPath>
+      <HintPath>$(KOSPlugins)/kOS.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="kOS.Safe">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kOS\Plugins\kOS.Safe.dll</HintPath>
+      <HintPath>$(KOSPlugins)/kOS.Safe.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="KRPC">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kRPC\KRPC.dll</HintPath>
+      <HintPath>$(KRPCPlugins)/KRPC.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="KRPC.Core">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kRPC\KRPC.Core.dll</HintPath>
+      <HintPath>$(KRPCPlugins)/KRPC.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="KRPC.SpaceCenter">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kRPC\KRPC.SpaceCenter.dll</HintPath>
+      <HintPath>$(KRPCPlugins)/KRPC.SpaceCenter.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="KRPC.UI">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\GameData\kRPC\KRPC.UI.dll</HintPath>
+      <HintPath>$(KRPCPlugins)/KRPC.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -76,14 +76,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(KSPManaged)/UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(KSPManaged)/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:\KSP\Dev\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>$(KSPManaged)/UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -5,7 +5,8 @@ KSP/*
 # Just say no to binary output
 plugin/Output/*
 Output/*
-
+# Developers configure thier own Directory.Build.user.props
+Directory.Build.user.props
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and

@@ -1,0 +1,21 @@
+<Project>
+  <!--
+    Copy this file to Directory.Build.user.props (which is gitignored) and
+    edit KSPRoot to point at your local Kerbal Space Program 1.12.x install.
+
+    On Windows:
+      <KSPRoot>C:/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program</KSPRoot>
+
+    On Linux (Steam):
+      <KSPRoot>/home/YOU/.local/share/Steam/steamapps/common/Kerbal Space Program</KSPRoot>
+
+    On macOS (Steam):
+      <KSPRoot>/Users/YOU/Library/Application Support/Steam/steamapps/common/Kerbal Space Program</KSPRoot>
+
+    Forward slashes work everywhere; do not escape spaces.
+    Alternatively, set KSPRoot as an environment variable instead of using this file.
+  -->
+  <PropertyGroup>
+    <KSPRoot>/path/to/Kerbal Space Program</KSPRoot>
+  </PropertyGroup>
+</Project>
